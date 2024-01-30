@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 56px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Novosti</h1>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Main News Section -->
+                <h2>Main News</h2>
+                <div class="card">
+                    <img src="https://placekitten.com/800/400" class="card-img-top" alt="Main News Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Main News Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                            libero
+                            auctor,
+                            fringilla mi eget, fermentum arcu. Fusce vitae mauris in orci aliquet
+                            bibendum...</p>
+                        <a href="#" class="btn btn-primary" onclick="addNews()">Dobavit' Novost'</a>
+                        <a href="#" class="btn btn-danger" onclick="deleteNews()">Udalit' Novost'</a>
+                    </div>
+                </div>
+
+                <!-- Additional News Section -->
+                <h2>Additional News</h2>
+                <div class="card">
+                    <img src="https://placekitten.com/800/400" class="card-img-top" alt="Additional News Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Additional News Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                            libero
+                            auctor,
+                            fringilla mi eget, fermentum arcu. Fusce vitae mauris in orci aliquet
+                            bibendum...</p>
+                        <a href="#" class="btn btn-primary" onclick="addNews()">Dobavit' Novost'</a>
+                        <a href="#" class="btn btn-danger" onclick="deleteNews()">Udalit' Novost'</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Sidebar or Advertisement Section -->
+                <h2>Advertisement</h2>
+                <img src="https://placekitten.com/400/600" class="img-fluid" alt="Advertisement Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function addNews() {
+            // Add your logic here for adding news
+            console.log("Adding news...");
+        }
+
+        function deleteNews() {
+            // Add your logic here for deleting news
+            console.log("Deleting news...");
+        }
+    </script>
+
+</body>
+
+</html>
